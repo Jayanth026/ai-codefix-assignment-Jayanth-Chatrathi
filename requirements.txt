@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+transformers
+accelerate
+torch
+sentence-transformers
+faiss-cpu
+pydantic
+requests
+python-dotenv
+sentencepiece

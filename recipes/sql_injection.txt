@@ -1,0 +1,14 @@
+Issue: SQL Injection (CWE-89)
+
+Guidelines:
+- Never concatenate user input directly into SQL queries.
+- Use prepared statements or parameterized queries.
+- Validate and sanitize input.
+- Use least-privilege accounts.
+
+Example (Java, JDBC):
+
+String sql = "SELECT * FROM users WHERE id = ?";
+PreparedStatement ps = connection.prepareStatement(sql);
+ps.setInt(1, userId);
+ResultSet rs = ps.executeQuery();
